@@ -9,8 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
 	const s8 = new URLSearchParams(location.search).get("score8") || 0;
 	const s9 = new URLSearchParams(location.search).get("score9") || 0;
 	const s10 = new URLSearchParams(location.search).get("score10") || 0;
+	const s11 = new URLSearchParams(location.search).get("score11") || 0;
+	const s12 = new URLSearchParams(location.search).get("score12") || 0;
 
-	const totalScore = parseInt(s) + parseInt(s2) + parseInt(s3) + parseInt(s4) + parseInt(s5) + parseInt(s6) + parseInt(s7) + parseInt(s8) + parseInt(s9) + parseInt(s10);
+	const totalScore = parseInt(s) + parseInt(s2) + parseInt(s3) + parseInt(s4) + parseInt(s5) + parseInt(s6) + parseInt(s7) + parseInt(s8) + parseInt(s9) + parseInt(s10) + parseInt(s11) + parseInt(s12);
 
 	const res = {
 		0: "more smoked than a foot in bowman pc.",
@@ -22,8 +24,10 @@ document.addEventListener("DOMContentLoaded", function() {
 		6: "an average brell.",
 		7: "the normal neighborhood brellfoot.",
 		8: "brelling.",
-		9: "a Umbrella848 stalker.",
-		10: "truely Umbrella848."
+		9: "an Umbrella848 stalker.",
+		10: "brelltastic.",
+		11: "a holy brell.",
+		12: "truely Umbrella848."
 	};
 
 	document.getElementById("result").innerHTML = res[totalScore];
